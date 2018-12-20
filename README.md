@@ -2,6 +2,13 @@
 
 My first formal Python package. Using [this](https://python-packaging.readthedocs.io/en/latest/) tutorial as a guideline.
 
+This package exposes one function, `group_by()`. Purpose of this function is to 
+provide a drop-in replacement for `pandas.DataFrame.grouoby()` that will keep 
+`NaN` values in the output as a group. Currently, the Pandas `groupby()` function 
+will drop `NaN`'s from the set of groups, and I don't see a native way around this.
+`group_by()` can take all of the same optional input arguments as the Pandas version. 
+It can also group by multiple columns.
+
 ## Installation
 
 Clone this repo locally.
