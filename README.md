@@ -45,7 +45,7 @@ cat       3
 dog       2
 ```
 
-# If we use the custom `group_by()` function on the same data set that contains 
+If we use the custom `group_by()` function on the same data set that contains 
 `NaN` values, it will preserve the missing values and list them in the summary 
 stats table.
 ```py
