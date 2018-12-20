@@ -8,13 +8,13 @@ https://python-packaging.readthedocs.io/en/latest/
 
 """
 
-from pandas import core
+from pandas.core.frame import DataFrame
 from numpy import nan
 
 ## Custom function definition
 def group_by(df, cols, **kwargs):
     # Input validations.
-    if not isinstance(df, core.frame.DataFrame):
+    if not isinstance(df, DataFrame):
         raise ValueError("arg 'df' must be a pandas data frame")
     if not isinstance(cols, str) and not isinstance(cols, list):
         raise ValueError("arg 'cols' must be column headers to group by, as a single string or a list of strings")
