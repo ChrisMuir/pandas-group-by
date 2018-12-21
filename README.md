@@ -1,6 +1,7 @@
 # pandas-group-by
 
-My first formal Python package. Using [this](https://python-packaging.readthedocs.io/en/latest/) tutorial as a guideline.
+My first formal Python package, created as a test in order to learn about Python package building.
+Using [this](https://python-packaging.readthedocs.io/en/latest/) tutorial as a guideline.
 
 This package exposes one function, `group_by()`. Purpose of this function is to 
 provide a drop-in replacement for `pandas.DataFrame.groupby()` that will keep 
