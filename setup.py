@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 def readme():
     with open('README.md') as f:
@@ -16,6 +16,7 @@ setup(name='pandas_group_by',
       author='Chris Muir',
       author_email='chrismuirrva@gmail.com',
       license='MIT',
-      packages=['pandas_group_by'],
+      packages=find_packages(),
       zip_safe=False, 
-      install_requires=['pandas', 'numpy'])
+      test_suite='nose.collector',
+      tests_require=['nose', 'pandas', 'numpy'])
