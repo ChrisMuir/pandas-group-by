@@ -17,6 +17,7 @@ setup(name='pandas_group_by',
       author_email='chrismuirrva@gmail.com',
       license='MIT',
       packages=find_packages(),
+      include_package_data=True,
       zip_safe=False, 
       test_suite='nose.collector',
       tests_require=['nose', 'pandas', 'numpy'])
